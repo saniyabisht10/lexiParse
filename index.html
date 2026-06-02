@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Compiler Design Simulator</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>🌸 LexiParse 🌸</h1>
+<p>Interactive Demonstration of Compiler Phases</p>
+</header>
+
+<div class="container">
+
+<div class="input-section">
+
+<h2>Source Code Input</h2>
+
+<textarea id="codeInput"
+placeholder="Enter your code here"></textarea>
+
+<button onclick="compileCode()">
+Compile Code
+</button>
+
+<button onclick="loadSampleCode()">
+Sample Code
+</button>
+
+<button onclick="resetCompiler()">
+Reset
+</button>
+
+</div>
+
+<div class="progress-container">
+<div id="progressBar"></div>
+</div>
+
+<div class="output-grid">
+
+<div class="card">
+<h2>Lexical Analysis</h2>
+<div id="lexical"></div>
+</div>
+
+<div class="card">
+<h2>Syntax Analysis</h2>
+<div id="syntax"></div>
+</div>
+
+<div class="card">
+<h2>Semantic Analysis</h2>
+<div id="semantic"></div>
+</div>
+
+<div class="card">
+<h2>Symbol Table</h2>
+<div id="symbol"></div>
+</div>
+
+
+
+<div class="card">
+<h2>Code Optimization</h2>
+<div id="optimization"></div>
+</div>
+<div class="card">
+<h2>Intermediate Code</h2>
+<div id="intermediate"></div>
+</div>
+
+<div class="card">
+<h2>Target Code</h2>
+<div id="target"></div>
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
